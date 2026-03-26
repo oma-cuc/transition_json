@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+    <title>Transition JSON Betty Graph</title>
+     <link rel="stylesheet" href="./css/estilos.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.0/lottie.min.js"></script>
+</head>
+<body>
+
+</script><!-- endbuild -->
+
+
+<div id="lottie"></div>
+<div id="lottie-ubicador" style="position: absolute; top: 0; left: 0; width: 100%; height: 70vh; pointer-events: none;"></div>
+
+<div class="button-container">
+    <button onclick="playAnimation()" class="btn btn-control">
+        ▶ Play
+    </button>
+    <button onclick="continuar()" class="btn btn-control">
+        ◀ Continuar
+    </button>
+</div>
+
+<div class="button-container">
+    <button onclick="loadGraphic(1)" class="btn btn-graphic">
+        📊 Gráfico 1
+    </button>
+    <button onclick="loadGraphic(2)" class="btn btn-graphic">
+        📊 Gráfico 2
+    </button>
+    <button onclick="loadGraphic(3)" class="btn btn-graphic">
+        📊 Gráfico 3
+    </button>
+</div>
+
+<div class="button-container">
+    <button onclick="takeUbicador()" class="btn btn-ubicador">
+        📍 Take Ubicador
+    </button>
+    <button onclick="takeOutUbicador()" class="btn btn-ubicador">
+        ✖ Take Out
+    </button>
+</div>
+
+<script src="./js/scripts.js"></script>
+
+</body>
+</html>

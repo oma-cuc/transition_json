@@ -1,0 +1,77 @@
+ html, body{
+            background-color:#ffffff;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #lottie{
+            background-color:#ffffff;
+            width:100%;
+            height:70vh;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+            border: 2px dashed #cccccc;
+
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .btn-control {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-control:hover {
+            background-color: #5a6268;
+        }
+
+        .btn-graphic {
+            background-color: #0072ff;
+            color: white;
+        }
+
+        .btn-graphic:hover {
+            background-color: #0056cc;
+        }
+
+        .btn-ubicador {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn-ubicador:hover {
+            background-color: #c82333;
+        }
