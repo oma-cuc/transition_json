@@ -9,7 +9,7 @@
             
         }
         #lottie{
-            background-color:#ffffff;
+            background-color:transparent;
             width:100%;
             height:70vh;
             display:block;
@@ -18,7 +18,6 @@
             text-align: center;
             opacity: 1;
             border: 2px dashed #cccccc;
-
         }
 
         .button-container {

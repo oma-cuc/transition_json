@@ -10,8 +10,10 @@
 </script><!-- endbuild -->
 
 
-<div id="lottie"></div>
-<div id="lottie-ubicador" style="position: absolute; top: 0; left: 0; width: 100%; height: 70vh; pointer-events: none;"></div>
+
+<div id="lottie-barra-inferior" style="position: absolute; top: 0; left: 0; width: 100%; height: 70vh; pointer-events: none; z-index: 1;"></div>
+<div id="lottie" style="position: relative; z-index: 2;"></div>
+<div id="lottie-ubicador" style="position: absolute; top: 0; left: 0; width: 100%; height: 70vh; pointer-events: none; z-index: 3;"></div>
 
 <div class="button-container">
     <button onclick="playAnimation()" class="btn btn-control">
@@ -23,14 +25,23 @@
 </div>
 
 <div class="button-container">
-    <button onclick="loadGraphic(1)" class="btn btn-graphic">
+    <!-- <button onclick="loadGraphic(1)" class="btn btn-graphic">
         📊 Gráfico 1
-    </button>
+    </button> -->
     <button onclick="loadGraphic(2)" class="btn btn-graphic">
         📊 Gráfico 2
     </button>
     <button onclick="loadGraphic(3)" class="btn btn-graphic">
         📊 Gráfico 3
+    </button>
+    <button onclick="loadGraphic(4)" class="btn btn-graphic">
+        📊 CREDITOS X 1
+    </button>
+    <button onclick="loadGraphic(5)" class="btn btn-graphic">
+        📊 CREDITOS X 2 LINEAS
+    </button>
+     <button onclick="loadGraphic(6)" class="btn btn-graphic">
+        📊 CREDITOS X 3 LINEAS
     </button>
 </div>
 
