@@ -72,7 +72,7 @@ function loadNewGraphic(graphicNumber) {
         isTransitioning = false;
     });
 }
-
+lottiePlayer
 // ============================================================================
 // FUNCIONES DE DETECCIÓN Y LÓGICA
 // ============================================================================
@@ -243,7 +243,8 @@ function hideBarraInferior() {
 function playAnimation() {
     if (anim && currentGraphic !== null) {
         anim.setDirection(1);
-        anim.play();
+        //  anim.play();
+       anim.playSegments([0, 12], true);
     }
 }
 
@@ -274,12 +275,17 @@ function continuar() {
 // ============================================================================
 
 /**
- * Muestra el ubicador
+ * Muestra el ubicador (frames 0-24, pausa automática)
  */
 function takeUbicador() {
     if (ubicadorLoaded && animUbicador) {
-        animUbicador.setDirection(1);
-        animUbicador.play();
+
+        // Play normal 
+        // animUbicador.setDirection(1);
+        // animUbicador.play();
+
+        // Play con segmentos (0-24)
+        animUbicador.playSegments([0, 24], true);
         ubicadorVisible = true;
         return;
     }
@@ -289,7 +295,7 @@ function takeUbicador() {
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: './json/ubicador.json'
+        path: './json/ubicador_v3.json'
     };
 
     animUbicador = lottie.loadAnimation(paramsUbicador);
@@ -297,18 +303,25 @@ function takeUbicador() {
     animUbicador.addEventListener('DOMLoaded', function() {
         ubicadorLoaded = true;
         ubicadorVisible = true;
-        animUbicador.setDirection(1);
-        animUbicador.play();
+
+        // Play normal con reverse 
+        // animUbicador.setDirection(1);
+        // animUbicador.play();
+        // Play con segmentos (0-24)  -- 1 segundo
+        animUbicador.playSegments([0, 24], true);
     });
 }
 
 /**
- * Oculta el ubicador con animación reverse
+ * Saca el ubicador (frames 24-34, continúa la animación)
  */
 function takeOutUbicador() {
     if (animUbicador && ubicadorLoaded && ubicadorVisible) {
-        animUbicador.setDirection(-1);
-        animUbicador.play();
+        //  Continuar animacion con segmentos (24-36) --medio segundo
+        animUbicador.playSegments([24, 36], true);
+        // Salir con Reverse 
+        // animUbicador.setDirection(-1);
+        // animUbicador.play();
         ubicadorVisible = false;
     }
 }
