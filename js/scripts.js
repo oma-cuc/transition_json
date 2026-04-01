@@ -295,7 +295,7 @@ function takeUbicador() {
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: './json/misa.json'
+        path: './json/misaF.json'
     };
 
     animUbicador = lottie.loadAnimation(paramsUbicador);

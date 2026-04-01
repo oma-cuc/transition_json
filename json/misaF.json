@@ -12,7 +12,7 @@
         "list": [
             {
                 "origin": 0,
-                "fPath": "../fonts",
+                "fPath": "fonts/",
                 "fClass": "",
                 "fFamily": "Source Sans Pro",
                 "fWeight": "",
@@ -22,7 +22,7 @@
             },
             {
                 "origin": 0,
-                "fPath": "../fonts",
+                "fPath": "../fonts/",
                 "fClass": "",
                 "fFamily": "Source Sans Pro",
                 "fWeight": "",
