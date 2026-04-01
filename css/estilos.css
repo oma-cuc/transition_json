@@ -10,7 +10,7 @@
         }
 
         /* Fuentes para Lottie */
-        /* @font-face {
+        @font-face {
             font-family: 'Source Sans Pro';
             src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
             font-weight: normal;
@@ -24,7 +24,7 @@
             font-weight: bold;
             font-style: normal;
             font-display: block;
-        } */
+        }
 
         #lottie{
             background-color:transparent;
