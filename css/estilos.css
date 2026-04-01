@@ -8,6 +8,22 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
         }
+
+        /* Fuentes para Lottie */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Source Sans Pro';
+            src: url('../fonts/SourceSansPro-Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
         #lottie{
             background-color:transparent;
             width:100%;
