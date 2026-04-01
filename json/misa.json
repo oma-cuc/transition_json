@@ -1,1 +1,220 @@
-{"v":"5.9.0","fr":24,"ip":0,"op":36,"w":1920,"h":1080,"nm":"MISA","ddd":0,"assets":[],"fonts":{"list":[{"origin":0,"fPath":"fonts","fClass":"","fFamily":"Source Sans Pro","fWeight":"","fStyle":"Bold","fName":"SourceSansPro-Bold","ascent":70.098876953125},{"origin":0,"fPath":"fonts","fClass":"","fFamily":"Source Sans Pro","fWeight":"","fStyle":"Regular","fName":"SourceSansPro-Regular","ascent":71.1990356445313}]},"layers":[{"ddd":0,"ind":1,"ty":5,"nm":"Presenta","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[321.573,967.277,0],"ix":2,"l":2},"a":{"a":0,"k":[0,0,0],"ix":1,"l":2},"s":{"a":0,"k":[68.976,65.706,100],"ix":6,"l":2}},"ao":0,"t":{"d":{"k":[{"s":{"s":80,"f":"SourceSansPro-Regular","t":"Presenta","ca":0,"j":0,"tr":0,"lh":96,"ls":0,"fc":[0.055,0.055,0.055]},"t":0}]},"p":{},"m":{"g":1,"a":{"a":0,"k":[0,0],"ix":2}},"a":[]},"ip":0,"op":36,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":5,"nm":"Canal RCN","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[139.888,919.51,0],"ix":2,"l":2},"a":{"a":0,"k":[0,0,0],"ix":1,"l":2},"s":{"a":0,"k":[104.976,100,100],"ix":6,"l":2}},"ao":0,"t":{"d":{"k":[{"s":{"s":80,"f":"SourceSansPro-Bold","t":"Canal RCN","ca":0,"j":0,"tr":0,"lh":96,"ls":0,"fc":[0.055,0.055,0.055]},"t":0}]},"p":{},"m":{"g":1,"a":{"a":0,"k":[0,0],"ix":2}},"a":[]},"ip":0,"op":36,"st":0,"bm":0}],"markers":[]}
+{
+    "v": "5.9.0",
+    "fr": 24,
+    "ip": 0,
+    "op": 36,
+    "w": 1920,
+    "h": 1080,
+    "nm": "MISA",
+    "ddd": 0,
+    "assets": [],
+    "fonts": {
+        "list": [
+            {
+                "origin": 0,
+                "fPath": "../fonts",
+                "fClass": "",
+                "fFamily": "Source Sans Pro",
+                "fWeight": "",
+                "fStyle": "Bold",
+                "fName": "SourceSansPro-Bold",
+                "ascent": 70.098876953125
+            },
+            {
+                "origin": 0,
+                "fPath": "../fonts",
+                "fClass": "",
+                "fFamily": "Source Sans Pro",
+                "fWeight": "",
+                "fStyle": "Regular",
+                "fName": "SourceSansPro-Regular",
+                "ascent": 71.1990356445313
+            }
+        ]
+    },
+    "layers": [
+        {
+            "ddd": 0,
+            "ind": 1,
+            "ty": 5,
+            "nm": "Presenta",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        321.573,
+                        967.277,
+                        0
+                    ],
+                    "ix": 2,
+                    "l": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1,
+                    "l": 2
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        68.976,
+                        65.706,
+                        100
+                    ],
+                    "ix": 6,
+                    "l": 2
+                }
+            },
+            "ao": 0,
+            "t": {
+                "d": {
+                    "k": [
+                        {
+                            "s": {
+                                "s": 80,
+                                "f": "SourceSansPro-Regular",
+                                "t": "Presenta",
+                                "ca": 0,
+                                "j": 0,
+                                "tr": 0,
+                                "lh": 96,
+                                "ls": 0,
+                                "fc": [
+                                    0.055,
+                                    0.055,
+                                    0.055
+                                ]
+                            },
+                            "t": 0
+                        }
+                    ]
+                },
+                "p": {},
+                "m": {
+                    "g": 1,
+                    "a": {
+                        "a": 0,
+                        "k": [
+                            0,
+                            0
+                        ],
+                        "ix": 2
+                    }
+                },
+                "a": []
+            },
+            "ip": 0,
+            "op": 36,
+            "st": 0,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 2,
+            "ty": 5,
+            "nm": "Canal RCN",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        139.888,
+                        919.51,
+                        0
+                    ],
+                    "ix": 2,
+                    "l": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1,
+                    "l": 2
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        104.976,
+                        100,
+                        100
+                    ],
+                    "ix": 6,
+                    "l": 2
+                }
+            },
+            "ao": 0,
+            "t": {
+                "d": {
+                    "k": [
+                        {
+                            "s": {
+                                "s": 80,
+                                "f": "SourceSansPro-Bold",
+                                "t": "Canal RCN",
+                                "ca": 0,
+                                "j": 0,
+                                "tr": 0,
+                                "lh": 96,
+                                "ls": 0,
+                                "fc": [
+                                    0.055,
+                                    0.055,
+                                    0.055
+                                ]
+                            },
+                            "t": 0
+                        }
+                    ]
+                },
+                "p": {},
+                "m": {
+                    "g": 1,
+                    "a": {
+                        "a": 0,
+                        "k": [
+                            0,
+                            0
+                        ],
+                        "ix": 2
+                    }
+                },
+                "a": []
+            },
+            "ip": 0,
+            "op": 36,
+            "st": 0,
+            "bm": 0
+        }
+    ],
+    "markers": []
+}
