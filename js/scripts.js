@@ -12,6 +12,36 @@ var ubicadorLoaded = false;         // Indica si el ubicador ya fue cargado
 var ubicadorVisible = false;        // Indica si el ubicador está visible
 var barraInferiorLoaded = false;    // Indica si la barra inferior ya fue cargada
 var barraInferiorVisible = false;   // Indica si la barra inferior está visible
+var fontsLoaded = false;            // Indica si las fuentes ya fueron precargadas
+
+// ============================================================================
+// PRECARGA DE FUENTES
+// ============================================================================
+
+/**
+ * Precarga las fuentes para evitar problemas de renderizado en Lottie
+ * @returns {Promise} - Promesa que se resuelve cuando las fuentes están cargadas
+ */
+function preloadFonts() {
+    if (fontsLoaded) {
+        return Promise.resolve();
+    }
+    
+    return Promise.all([
+        document.fonts.load('400 80px "Source Sans Pro"'),
+        document.fonts.load('700 80px "Source Sans Pro"')
+    ]).then(function() {
+        fontsLoaded = true;
+        console.log('Fuentes precargadas correctamente');
+    }).catch(function(error) {
+        console.error('Error precargando fuentes:', error);
+    });
+}
+
+// Precargar fuentes al cargar la página
+if (document.fonts && document.fonts.load) {
+    preloadFonts();
+}
 
 // ============================================================================
 // FUNCIONES PRINCIPALES DE CARGA
@@ -279,37 +309,28 @@ function continuar() {
  */
 function takeUbicador() {
     if (ubicadorLoaded && animUbicador) {
-
-        // Play normal 
-        // animUbicador.setDirection(1);
-        // animUbicador.play();
-
-        // Play con segmentos (0-24)
         animUbicador.playSegments([0, 24], true);
         ubicadorVisible = true;
         return;
     }
 
-    var paramsUbicador = {
-        container: document.getElementById('lottie-ubicador'),
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: './json/misaF2.json'
-    };
+   
+        var paramsUbicador = {
+            container: document.getElementById('lottie-ubicador'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: './json/misaF2.json'
+        };
 
-    animUbicador = lottie.loadAnimation(paramsUbicador);
+        animUbicador = lottie.loadAnimation(paramsUbicador);
 
-    animUbicador.addEventListener('DOMLoaded', function() {
-        ubicadorLoaded = true;
-        ubicadorVisible = true;
-
-        // Play normal con reverse 
-        // animUbicador.setDirection(1);
-        // animUbicador.play();
-        // Play con segmentos (0-24)  -- 1 segundo
-        animUbicador.playSegments([0, 24], true);
-    });
+        animUbicador.addEventListener('DOMLoaded', function() {
+            ubicadorLoaded = true;
+            ubicadorVisible = true;
+            animUbicador.playSegments([0, 24], true);
+        });
+    ;
 }
 
 /**
